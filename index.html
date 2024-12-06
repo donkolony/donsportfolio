@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Don Kolony" />
+    <meta name="description" content="The official Portfolio of Don Kolony" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <link rel="icon" href="./assets/icons/portfolio_icon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <script>
+      const toggleClass = () => {
+        console.log("Hello");
+        const nav__mobile = document.getElementById("nav__mobile");
+        const nav__active = nav__mobile.getElementsByClassName("nav__active");
+        if (nav__active.length > 0) {
+          nav__mobile.classList.remove("nav__active");
+        } else {
+          nav__mobile.classList.add("nav__active");
+        }
+        // if (nav__mobile) {
+        //   // nav__mobile.classList.add("active");
+        //   nav__mobile.style.backgroundColor = "orange";
+        // }
+        console.log(nav__mobile);
+      };
+    </script> -->
+  </head>
+
+  <body>
+    <header class="navbar__header">
+      <h1 class="navbar__logo">D.D.</h1>
+      <div class="navbar__toggle" onclick="toggleClass()" id="mobile-menu">
+        <span class="bar"> </span>
+        <span class="bar"></span>
+      </div>
+      <!-- NAVBAR FOR LARGE SCREENS-->
+      <nav class="navbar__container">
+        <ul class="navbar__menu">
+          <li class="navbar__items">
+            <a href="#home" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__items">
+            <a href="#about" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__items">
+            <a href="#skills" class="navbar__links">Skills</a>
+          </li>
+          <li class="navbar__items">
+            <a href="#portfolio" class="navbar__links">Portfolio</a>
+          </li>
+          <li class="navbar__items">
+            <a href="#contact" class="navbar__links">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- NAVBAR FOR MOBILE ONLY -->
+      <nav class="navbar__mobile__container">
+        <ul class="navbar__mobile__menu" id="nav__mobile">
+          <li class="navbar__mobile__items">
+            <a href="#home" class="navbar__mobile__links">Home</a>
+          </li>
+          <li class="navbar__mobile__items">
+            <a href="#about" class="navbar__mobile__links">About</a>
+          </li>
+          <li class="navbar__mobile__items">
+            <a href="#skills" class="navbar__mobile__links">Skills</a>
+          </li>
+          <li class="navbar__mobile__items">
+            <a href="#portfolio" class="navbar__mobile__links">Portfolio</a>
+          </li>
+          <li class="navbar__mobile__items">
+            <a href="#contact" class="navbar__mobile__links">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <script src="index.js"></script>
+  </body>
+</html>
